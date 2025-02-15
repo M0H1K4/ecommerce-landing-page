@@ -5,6 +5,8 @@ import './App.css'
 import Header from './components/Header'
 import Product from './components/Product'
 import Txts from './components/Txts'
+import Price from './components/Price'
+import AddToCart from './components/AddToCart'
 
 function App() {
 
@@ -14,6 +16,10 @@ function App() {
       <Header/>
       <Product/>
       <Txts/>
+      <Price/>
+      <AddToCart/>
+      buttons <br />
+      addToCartMainButton
     </>
   )
 }

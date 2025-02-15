@@ -28,7 +28,7 @@ export default function Product() {
           <img src={left} alt="" />
         </button>
         <button className="move_buttons" onClick={nextSlide}>
-          <img src={right} alt="" />
+          <img className="move_buttons_image" src={right} alt="" />
         </button>
       </div>
     </div>
