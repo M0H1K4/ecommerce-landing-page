@@ -17,7 +17,7 @@ function App() {
       <Header/>
       <Product/>
       <Txts/>
-      <Price/>
+      {/* <Price/> */}
       <AddToCart/>
       <AddButton/>
     </>
