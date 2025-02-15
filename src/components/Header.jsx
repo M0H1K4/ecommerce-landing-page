@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <>
-      <header>
+      <header className="header1">
         <section className="header_sections">
           {isOpen ? (
             <img onClick={() => setIsOpen(false)} src={burgerMenuImg} alt="" />

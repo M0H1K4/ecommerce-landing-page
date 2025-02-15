@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-header {
+.header1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,8 +44,6 @@ header {
   height: 100vh;
   color: black;
 
-
-
   position: fixed; /* Keeps it in place while scrolling */
   top: 53%;
   left: 40%;
@@ -58,7 +56,14 @@ ul {
   gap: 20px;
   list-style: none;
 }
-.closeButton{
+.header2_ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+}
+.closeButton {
   margin-top: 50px;
 }
 .guy-img {
@@ -229,12 +234,12 @@ ul {
   top: 28%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centers it perfectly */
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   text-align: center;
   padding: 24px;
   width: 90%; /* Responsive width */
@@ -246,7 +251,7 @@ ul {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.cart_container_2{
+.cart_container_2 {
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
@@ -284,4 +289,47 @@ hr {
   border: none;
   background-color: #e4e9f2;
   margin-top: -110px;
+}
+
+@media screen and (min-width: 756px) {
+  .main-container {
+    display: none;
+  }
+  .main-container-desktop {
+    display: flex;
+    width: 80vw;
+    padding: 28px 165px 132px 165px;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    /* background-color: red; */
+  }
+  .header2 {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+    /* gap: 400px; */
+    width: 100%;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    /* position: fixed;
+    padding: 140px; */
+  }
+  .header2_div_1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .header2_div_2 {
+    display: flex;
+    gap: 20px;
+  }
+  .header2_ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
+  }
 }
