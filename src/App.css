@@ -9,6 +9,7 @@
 
 body {
   background-color: #fff;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,13 +37,19 @@ header {
 }
 .move_buttons {
   border: none;
-  border-radius: 10px;
+  border-radius: 100%;
+  background-color: none;
   /* border-radius: 30px; */
+  align-items: center;
+  /* margin-top: 123px; */
+  background-color: transparent;
 }
 .move_buttons_image {
   /* width: 100px; */
   /* border-radius: 120px; */
+  /* background-color: transparent; */
 }
+
 .buttons_siv {
   display: flex;
   justify-content: space-between;
@@ -149,9 +156,7 @@ header {
 }
 .addToCart_img {
   border: none;
-}
-.plusButton_minus {
-  background-color: white;
+  background-color: transparent;
 }
 .button_div {
   display: flex;
