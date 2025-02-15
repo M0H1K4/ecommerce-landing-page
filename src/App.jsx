@@ -7,6 +7,7 @@ import Product from './components/Product'
 import Txts from './components/Txts'
 import Price from './components/Price'
 import AddToCart from './components/AddToCart'
+import AddButton from './components/AddButton'
 
 function App() {
 
@@ -18,8 +19,7 @@ function App() {
       <Txts/>
       <Price/>
       <AddToCart/>
-      buttons <br />
-      addToCartMainButton
+      <AddButton/>
     </>
   )
 }

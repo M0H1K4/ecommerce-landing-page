@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Kumbh Sans";
 }
 
 body {
@@ -142,13 +143,46 @@ header {
   line-height: 26px; /* 162.5% */
   text-decoration-line: strikethrough;
 }
-.addToCart_div{
+.addToCart_div {
   display: flex;
   justify-content: space-around;
 }
-.addToCart_img{
+.addToCart_img {
   border: none;
 }
-.plusButton_minus{
+.plusButton_minus {
   background-color: white;
+}
+.button_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100px;
+  height: 150px; */
+  /* background-color: red; */
+  /* gap: 101px; */
+}
+.Add_button {
+  width: 327px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ff7e1b;
+  box-shadow: 0px 20px 50px -20px #ff7e1b;
+  border: none;
+  margin-top: 20px;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+.button_txt{
+  color: #1d2026;
+  font-family: "Kumbh Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
