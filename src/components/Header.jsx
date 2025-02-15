@@ -8,53 +8,56 @@ import closeButton from "../assets/close-iocon.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(true);
+  const [cartIsOpen, setCartIsOpen] = useState(false);
 
   return (
-    <header>
-      <section className="header_sections">
-        {isOpen ? (
-          <img onClick={() => setIsOpen(false)} src={burgerMenuImg} alt="" />
-        ) : (
-          <div className="burgerMenu">
-            <div>
-              <img onClick={() => setIsOpen(true)} src={closeButton} alt="" />
+    <>
+      <header>
+        <section className="header_sections">
+          {isOpen ? (
+            <img onClick={() => setIsOpen(false)} src={burgerMenuImg} alt="" />
+          ) : (
+            <div className="burgerMenu">
+              <div>
+                <img onClick={() => setIsOpen(true)} src={closeButton} alt="" />
+              </div>
+              <ul>
+                <li>Collections</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
             </div>
-            <ul>
-              <li>Collections</li>
-              <li>Men</li>
-              <li>Women</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-        )}
+          )}
 
-        {/* <img src={closeButton} alt="" /> */}
-        <img className="logo" src={Logo} alt="" />
-      </section>
-      <section className="header_sections">
-        <img src={cartImg} alt="" />
-        <img className="guy-img" src={guyImg} alt="" />
-      </section>
-    </header>
+          {/* <img src={closeButton} alt="" /> */}
+          <img className="logo" src={Logo} alt="" />
+        </section>
+        <section className="header_sections">
+          {cartIsOpen ? (
+            <img onClick={() => setCartIsOpen(false)} src={cartImg} alt="" />
+          ) : (
+            <>
+            <img onClick={() => setCartIsOpen(true)} src={cartImg} alt="" />
+            <Cart />
+            </>
+          )}
+          <img className="guy-img" src={guyImg} alt="" />
+        </section>
+      </header>
+    </>
   );
 }
 
-function SideBarComponent() {
+function Cart() {
   return (
-    <>
-      <div className="burgerMenu">
-        <div>
-          <img onClick={() => setIsOpen(true)} src={closeButton} alt="" />
-        </div>
-        <ul>
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+    <div className="cart_container">
+      <p className="cart_p">Cart</p>
+      <hr />
+      <div className="cart_container_2">
+        <h3 className="cart_h3">Your cart is empty.</h3>
       </div>
-    </>
+    </div>
   );
 }
