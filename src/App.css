@@ -226,7 +226,7 @@ ul {
 
 .cart_container {
   position: fixed; /* Keeps it in place while scrolling */
-  top: 25%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centers it perfectly */
   
