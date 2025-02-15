@@ -31,20 +31,25 @@ header {
 }
 .burgerMenu {
   display: flex;
-  position: absolute;
-  margin: 0 auto;
+  /* position: absolute; */
+  /* margin: 0 auto; */
   overflow: hidden;
   flex-direction: column;
   gap: 50px;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); */
   transition: left 0.3s ease-in-out; /* Smooth transition */
   padding: 20px;
-  top: 0%;
-  left: 0%;
   background-color: white;
   width: 300px;
   height: 100vh;
   color: black;
+
+
+
+  position: fixed; /* Keeps it in place while scrolling */
+  top: 52%;
+  left: 40%;
+  transform: translate(-50%, -50%);
 }
 ul {
   display: flex;
@@ -217,20 +222,27 @@ ul {
 }
 
 .cart_container {
+  position: fixed; /* Keeps it in place while scrolling */
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers it perfectly */
+  
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 10%;
-  left: 2%;
-  flex-direction: column;
+  
   text-align: center;
   padding: 24px;
-  position: absolute;
-  width: 360px;
+  width: 90%; /* Responsive width */
+  max-width: 360px; /* Prevents it from being too large */
   height: 256px;
-  flex-shrink: 0;
+
   background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 .cart_container_2{
   /* display: flex; */
   /* justify-content: center; */
@@ -263,9 +275,10 @@ ul {
   line-height: 26px; /* 162.5% */
 }
 hr {
-  width: 360px;
+  width: 110%;
   height: 1px;
   flex-shrink: 0;
   border: none;
   background-color: #e4e9f2;
+  margin-top: -110px;
 }
