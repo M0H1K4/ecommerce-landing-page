@@ -36,11 +36,14 @@ export default function Header() {
         </section>
         <section className="header_sections">
           {cartIsOpen ? (
+            <>
             <img onClick={() => setCartIsOpen(false)} src={cartImg} alt="" />
+            <Cart />
+            </>
           ) : (
             <>
             <img onClick={() => setCartIsOpen(true)} src={cartImg} alt="" />
-            <Cart />
+            {/* hello world */}
             </>
           )}
           <img className="guy-img" src={guyImg} alt="" />
