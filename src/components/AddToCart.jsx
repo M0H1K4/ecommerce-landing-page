@@ -19,6 +19,11 @@ export default function AddToCart() {
     setDiscount(discount +  250)
     // console.log(setDiscount())
   }
+  const handleDiscount2 = () =>{
+    // setDiscount(price);
+    setDiscount(discount -  250)
+    // console.log(setDiscount())
+  }
 
   const handleMultiple = () => {
     setPrice(price + 125);
@@ -37,6 +42,7 @@ export default function AddToCart() {
           onClick={() => {
             setNumber(number - 1);
             handleMultiple2()
+            handleDiscount2()
 
           }}
         >
