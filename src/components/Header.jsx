@@ -19,7 +19,7 @@ export default function Header() {
           ) : (
             <div className="burgerMenu">
               <div>
-                <img onClick={() => setIsOpen(true)} src={closeButton} alt="" />
+                <img className="closeButton" onClick={() => setIsOpen(true)} src={closeButton} alt="" />
               </div>
               <ul>
                 <li>Collections</li>

@@ -58,6 +58,9 @@ ul {
   gap: 20px;
   list-style: none;
 }
+.closeButton{
+  margin-top: 50px;
+}
 .guy-img {
   width: 24px;
   height: 24px;
