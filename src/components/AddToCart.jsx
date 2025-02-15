@@ -9,11 +9,11 @@ export default function AddToCart() {
   return (
     <div className="addToCart_div">
       <button className="addToCart_img" onClick={() => setNumber(number - 1)}>
-        <img  src={minus} alt="" />
+        <img className="plusButton_minus"  src={minus} alt="" />
       </button>
       <h3>{number}</h3>
       <button className="addToCart_img" onClick={() => setNumber(number + 1)}>
-        <img  src={plus} alt="" />
+        <img   className="plusButton_minus" src={plus} alt="" />
       </button>
     </div>
   );
