@@ -291,18 +291,22 @@ hr {
   margin-top: -110px;
 }
 
+.main-container-desktop{
+  display: none;
+}
 @media screen and (min-width: 756px) {
   .main-container {
     display: none;
   }
   .main-container-desktop {
     display: flex;
-    width: 80vw;
+    width: 100vw;
     padding: 28px 165px 132px 165px;
     justify-content: center;
     align-items: center;
     /* position: fixed; */
     /* background-color: red; */
+    background-color: red;
   }
   .header2 {
     display: flex;
